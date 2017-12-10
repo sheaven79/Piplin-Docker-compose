@@ -27,7 +27,7 @@ RUN set -xe \
 
 # 安装项目依赖
 RUN set -xe \
-    && apk add --no-cache redis nodejs supervisor git bash openssh-client rsync \
+    && apk add --no-cache redis nodejs supervisor git mysql-client bash openssh-client rsync \
     && npm config set registry http://registry.npm.taobao.org/ \
     && mkdir -p /etc/supervisor/conf.d \
     && echo '* * * * * /usr/bin/php /var/www/piplin/artisan schedule:run >> /dev/null 2>&1' > /etc/crontabs/root
