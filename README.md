@@ -19,8 +19,8 @@ $ sh build.sh
 
 ```
 $ docker-compose -p piplin up -d
-
 ```
+> 首次运行初始化需要一段时间可能无法立刻访问，进度可用 docker-compose -p piplin logs php 查看
 
 ## 访问
 
@@ -52,7 +52,7 @@ docker-compose.yml
 
 进入 web 容器
 
-`docker-compose -p piplin exec web ash`
+`docker-compose -p piplin exec php ash`
 
 ## 清理
 >!!!注意以下操作会清理全部 Piplin Docker 数据，一般用于重新部署时用!!!
