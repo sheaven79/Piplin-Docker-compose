@@ -2,12 +2,6 @@
 ## 系统要求
 Docker Engine release 17.04.0+
 
-## 项目克隆
-
-```
-$ git clone git@git.hoge.cn:piplin/Docker-compose.git
-```
-
 ## 构建
 
 ```
